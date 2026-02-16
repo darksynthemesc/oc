@@ -1,0 +1,43 @@
+body {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	min-height:90vh;
+	text-align: center;
+}
+
+.links{
+	position: absolute;
+	top: 0;
+}
+
+.b{
+	display: inline-block;
+	text-align: center;
+	min-width: 48px;
+	min-height: 48px;
+}
+
+#blue,#teal,#gren,#yelw,#orng,#rred{
+	display: inline-block;
+	text-align: center;
+	min-width: 35px;
+	min-height: 35px;
+}
+
+#log{
+	position: absolute;
+	left: 20%;
+	text-align: left;
+}
+
+.rul{
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	text-align: left;
+}
+
+#rul{
+	display: none;
+}

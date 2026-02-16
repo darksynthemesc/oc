@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<link rel="stylesheet" href="s.css" type="text/css">
+	<title>$oc helper</title>
+</head>
+	<body>
+		<div class="links">
+			<a href="game.html">game</a>
+		</div>
+		<div>
+			<button onclick="rst()">reset</button><br>
+			<input type="checkbox" id="fs" onchange="rst()">
+			<label for="fs">free select</label>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<input type="number" id="att" min="1" max="25" value="5" inputmode="numeric" onchange="rst()">
+			<label for="att">tries</label>
+		</div>
+		<br>
+		<div id="btn"></div>
+		<br>
+		<div>
+			<button id="blue" onclick="a(0)"></button>
+			<button id="teal" onclick="a(1)"></button>
+			<button id="gren" onclick="a(2)"></button>
+			<button id="yelw" onclick="a(3)"></button>
+			<button id="orng" onclick="a(4)"></button>
+			<button id="rred" onclick="a(5)"></button>
+		</div>
+		<br>
+		<span id="sub"></span>
+		<span id="att2">tries left:</span>
+		<script>
+			document.getElementById("fs").checked = false;//force uncheck
+		</script>
+		<script src="h.js"></script>
+		<script src="n.js"></script>
+	</body>
+</html>

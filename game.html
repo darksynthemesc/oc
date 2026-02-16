@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<link rel="stylesheet" href="s.css" type="text/css">
+	<title>$oc game</title>
+</head>
+	<body>
+		<div class="links">
+			<a href="index.html">helper</a>
+		</div>
+		<div>
+			<button onclick="rst()">reset</button><br>
+			<input type="number" id="att" min="1" max="25" value="5" inputmode="numeric" onchange="rst()">
+			<label for="att">tries</label>
+		</div>
+		<div id="btn"></div>
+		<span id="att2">tries left:</span>
+		<span id="sc">score:</span>
+		<div id="log"></div>
+		<div class="rul">
+			<p id="rul">
+				you can click 5 buttons<br>
+				<br>
+				1 red (NEVER at the center) - 150 points<br>
+				2 orange (always next to red) - 90 points<br>
+				3 yellow (diagonal to red) - 55 points<br>
+				4 green (same row/column as red) - 35 points<br>
+				teal (same row/column/diagonal as red) - 20 points<br>
+				blue (NEVER the same row/column/diagonal as red) - 10 points
+			</p>
+			<input type="button" value="rules" onclick="dsp();">
+		</div>
+		<script src="g.js"></script>
+		<script src="n.js"></script>
+		<script>
+			var d=0;
+			function dsp(){
+				let rul=document.getElementById("rul");
+				if(d===0){
+					document.getElementById("rul").style="display: block;";
+					d=1;
+				}else{
+					document.getElementById("rul").style="display: none;";
+					d=0;
+				}
+			}
+		</script>
+	</body>
+</html>
