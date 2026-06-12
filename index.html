@@ -10,11 +10,15 @@
 			<a href="https://github.com/darksynthemesc/oc">github</a>
 		</div>
 		<div>
-			<button onclick="rst()">reset</button><br>
-			<input type="checkbox" id="fs" onchange="rst()">
+			<button onclick="rst()">reset</button>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<button id="udd" onclick="udd()">undo</button>
+			<button id="rdd" onclick="rdd()">redo</button>
+			<button id="dsl" onclick="dsl()">deselect</button><br>
+			<input type="checkbox" id="fs" onchange="fsl()">
 			<label for="fs">free select</label>
 			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<input type="number" id="att" min="1" max="25" value="5" inputmode="numeric" onchange="rst()">
+			<input type="number" id="att" min="1" max="25" value="5" inputmode="numeric">
 			<label for="att">tries</label>
 		</div>
 		<br>
@@ -32,7 +36,7 @@
 		<span id="sub"></span>
 		<span id="att2">tries left:</span>
 		<script>
-			document.getElementById("fs").checked = false;//force uncheck
+			document.getElementById("fs").checked = true;//force check
 		</script>
 		<script src="h.js"></script>
 		<script src="n.js"></script>
